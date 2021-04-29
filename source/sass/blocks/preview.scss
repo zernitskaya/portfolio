@@ -1,0 +1,243 @@
+.preview {
+  display: flex;
+  position: relative;
+}
+
+.preview__wrap {
+  display: flex;
+  transition: 1s;
+}
+
+.preview__border {
+  width: 40px;
+  height: 40px;
+  background: #282829;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 1s;
+}
+
+.preview__circle {
+  display: block;
+}
+
+.preview__circle1 {
+  z-index: 1;
+  // z-index: 4;
+  // opacity: 0;
+}
+
+.preview__hidden:checked ~ .preview__wrap .preview__border {
+  background: #ff0000;
+  transition: 1s;
+}
+
+.preview__hidden:checked ~ .preview__wrap .pb {
+  transition: 1.2s;
+  opacity: 0.8;
+  animation-name: circle;
+  animation-duration: 2.5s;
+}
+
+.preview__hidden:checked ~ .preview__wrap .pb2 {
+  transition: 1.4s;
+  opacity: 0.7;
+  animation-name: circle2;
+  animation-duration: 1.5s;
+}
+
+.preview__hidden:checked ~ .preview__wrap .pb3 {
+  transition: 1.6s;
+  opacity: 0.5;
+  animation-name: circle3;
+  animation-duration: 3s;
+}
+
+.preview__hidden:checked ~ .preview__wrap .pb4 {
+  transition: 2s;
+  opacity: 0.4;
+  animation-name: circle4;
+  animation-duration: 1.5s;
+}
+
+.preview__hidden:checked ~ .preview__wrap{
+  transition: 0.5s;
+  margin-left: -230px;
+}
+
+.preview__hidden:checked ~ .preview__wrap .slider__point-1, .slider__point-2, .slider__point-3 {
+  display: block;
+  width: 40px;
+  height: 40px;
+  animation-name: point1;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  background: #ff0000;
+  z-index: 3;
+  opacity: 1;
+}
+
+
+.preview__hidden:checked ~ .preview__wrap .slider__point-2 {
+  display: block;
+  width: 40px;
+  height: 40px;
+  animation-name: point2;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  background: #ff0000;
+  z-index: 3;
+  opacity: 1;
+}
+
+
+.preview__hidden:checked ~ .preview__wrap .slider__point-3 {
+  display: block;
+  width: 40px;
+  height: 40px;
+  animation-name: point3;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  background: #ff0000;
+  z-index: 3;
+  opacity: 1;
+}
+
+.slider__point-1:not(:checked) {
+  width: 30px;
+  height: 2px;
+  display: block;
+  transition: 0.1s;
+  z-index: 3;
+  opacity: 1;
+  background: white;
+}
+
+.slider__point-2:not(:checked) {
+  display: none;
+}
+
+.slider__point-3:not(:checked) {
+  display: none;
+}
+
+@keyframes point1 {
+  0%{
+    transform: translate(0px) scale(1);
+  }
+
+  50%{
+    transform: translate(55px, -50px) scale(0.5);
+  }
+
+  70% {
+    background: #ff0000;
+  }
+
+  100%{
+    transform: translate(0px) scale(0.1);
+    background: #000;
+    z-index: 4;
+  }
+}
+
+
+@keyframes point2 {
+  0%{
+    transform: translate(0px) scale(1);
+  }
+
+  50%{
+    transform: translate(180px, 100px) scale(2);
+  }
+
+  70% {
+    background: #ff0000;
+  }
+
+  100%{
+    transform: translate(10px, 0) scale(0.1);
+    background: #000;
+    z-index: 8;
+  }
+}
+
+
+@keyframes point3 {
+  0%{
+    transform: translate(0px) scale(1);
+  }
+
+  50%{
+    transform: translate(55px, -100px) scale(2);
+  }
+
+  70% {
+    background: #ff0000;
+  }
+
+  100%{
+    transform: translate(-11px, 0) scale(0.1);
+    background: #000;
+    z-index: 8;
+  }
+}
+
+@keyframes circle {
+  0%{
+    transform: translate(0px) scale(1);
+  }
+
+  50%{
+    transform: translate(55px, -250px) scale(2);
+  }
+
+  100%{
+    transform: translate(0px) scale(1);
+  }
+}
+
+@keyframes circle2 {
+  0%{
+    transform: translate(0px);
+  }
+
+  50%{
+    transform: translate(104px, -42px) scale(3);
+  }
+
+  100%{
+    transform: translate(0px) scale(0.3);
+  }
+}
+
+@keyframes circle3 {
+  0%{
+    transform: translate(0px);
+  }
+
+  50%{
+    transform: translate(100px, 39px) scale(0.5);
+  }
+
+  100%{
+    transform: translate(0px) scale(0.3);
+  }
+}
+
+@keyframes circle4 {
+  0%{
+    transform: translate(0px);
+  }
+
+  50%{
+    transform: translate(50px, 213px) scale(0.2);
+  }
+
+  100%{
+    transform: translate(0px) scale(1);
+  }
+}
