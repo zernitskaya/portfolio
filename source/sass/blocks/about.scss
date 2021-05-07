@@ -1,5 +1,79 @@
 .about {
   font-family: $basic-font;
-  max-width: 900px;
+  padding-bottom: 30px;
+}
+
+.about__title {
+  font-size: 20px;
+  color: #ff0000;
+  text-transform: uppercase;
+}
+
+.about__me,
+.about__study,
+.about__skills,
+.about__lang {
   margin: 0 auto;
+  padding: 30px;
+  width: 500px;
+  height: 100%;
+  line-height: 20px;
+  border: 1px solid #848484;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 70px;
+}
+
+.about__me::before,
+.about__skills::before,
+.about__me::after,
+.about__skills::after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  bottom: -20px;
+  border: 10px solid transparent;
+  border-top: 10px solid #848484;
+}
+
+.about__me::after,
+.about__skills::after {
+  border-top: 10px solid white;
+  bottom: -19px;
+}
+
+.about__study,
+.about__lang {
+  left: 300px;
+}
+
+.about__study::before,
+.about__lang::before,
+.about__study::after,
+.about__lang::after {
+  content: '';
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  border: 10px solid transparent;
+  border-top: 10px solid #848484;
+}
+
+.about__study::after,
+.about__lang::after {
+  border-top: 10px solid white;
+  bottom: -19px;
+}
+
+.about__study-item {
+  padding-top: 15px;
+}
+
+.about__skills-list,
+.about__lang-list {
+  padding-top: 15px;
+}
+
+.about__text {
+  padding-top: 15px;
 }

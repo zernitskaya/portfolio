@@ -1,0 +1,35 @@
+.contacts {
+  font-family: $basic-font;
+  height: 100vh;
+}
+
+.contacts__title {
+  font-size: 20px;
+  color: #ff0000;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px;
+}
+
+.contacts__wrap {
+  width: 700px;
+  margin: 0 auto;
+  border: 1px solid #848484;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  transform: translateY(-50%) translateX(-50%);
+  top: 50%;
+  left: 50%;
+}
+
+.contacts__list {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+
+.contacts__item-red {
+  color: #ff0000;
+}
