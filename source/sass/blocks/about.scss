@@ -15,13 +15,18 @@
 .about__lang {
   margin: 0 auto;
   padding: 30px;
-  width: 500px;
+  width: 40%;
   height: 100%;
   line-height: 20px;
   border: 1px solid #848484;
   border-radius: 10px;
   position: relative;
   margin-top: 70px;
+
+
+  @include middle-tablet {
+    width: 80%;
+  }
 }
 
 .about__me::before,
@@ -45,6 +50,10 @@
 .about__study,
 .about__lang {
   left: 300px;
+
+  @include middle-tablet {
+    left: 0;
+  }
 }
 
 .about__study::before,

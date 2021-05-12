@@ -4,6 +4,15 @@
   padding: 8px 12px;
   border-radius: 4px;
   background: #ff0000;
+
+  @include tablet {
+    margin-bottom: 10px;
+    // margin-left: -10px;
+  }
+
+  @include mobile {
+    margin-left: -10px;
+  }
 }
 
 .block__wrap {

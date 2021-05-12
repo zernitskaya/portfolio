@@ -4,12 +4,28 @@
   padding-left: 50px;
   padding-top: 50px;
   transition: 1s;
+
+  @include tablet {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  @include mobile {
+    position: absolute;
+  }
 }
 
 .menu__heading {
   font-size: 25px;
   text-transform: uppercase;
   margin-bottom: 35px;
+
+  @include mobile {
+    // background: #000;
+    // color: #fff;
+    background:  #fff;
+    color:#000;
+  }
 }
 
 .menu__heading-selection {
@@ -23,15 +39,38 @@
   width: 180px;
   height: 250px;
   margin-bottom: 35px;
+
+  @include tablet {
+    width: 158px;
+    height: 168px;
+  }
+
+  @include mobile {
+    // width: 50px;
+    // height: 50px;
+    display: none;
+  }
 }
 
 .menu__img {
   width: 100%;
   height: 100%;
+
+  @include tablet {
+    object-fit: cover;
+  }
 }
 
 .menu__item {
   padding-bottom: 5px;
+
+  @include mobile {
+    background:  #fff;
+    color:#000;
+    text-align: center;
+    margin-bottom: 2px;
+    padding: 5px;
+  }
 }
 
 .menu__link {

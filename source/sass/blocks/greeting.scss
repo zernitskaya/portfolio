@@ -10,7 +10,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // position: relative;
 }
 
 .greeting__logo {
@@ -27,6 +26,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include middle-tablet {
+    padding: 40px;
+    // align-items: flex-start;
+    align-items: flex-end;
+  }
+
+  @include mobile {
+  padding-top: 200px;
+  }
 }
 
 .greeting__heading {
@@ -34,11 +43,22 @@
   font-size: 36px;
   color: #d7d7d7;
   padding-bottom: 25px;
+
+  @include middle-mobile {
+    // background: #000;
+    font-size: 24px;
+    padding-bottom: 50px;
+  }
 }
 
 .greeting__text {
   color: #a3a3a3;
   padding-bottom: 35px;
+
+  @include middle-mobile {
+    font-size: 14px;
+    padding-bottom: 50px;
+  }
 }
 
 .greeting__text-selection {
@@ -56,6 +76,11 @@
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 0 8px #acacac;
+
+  @include middle-mobile {
+    width: 150px;
+    height: 50px;
+  }
 }
 
 .greeting__button:hover {

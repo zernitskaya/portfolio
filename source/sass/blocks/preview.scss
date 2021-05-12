@@ -10,6 +10,11 @@
   z-index: 51;
   display: flex;
   transition: 1s;
+
+
+  @include tablet {
+  //  flex-direction: column;
+  }
 }
 
 .preview__border {
@@ -30,8 +35,6 @@
 
 .preview__circle1 {
   z-index: 1;
-  // z-index: 4;
-  // opacity: 0;
 }
 
 .preview__hidden:checked ~ .preview__wrap .preview__border {
@@ -70,6 +73,18 @@
 .preview__hidden:checked ~ .preview__wrap{
   transition: 0.5s;
   margin-left: -230px;
+
+  @include tablet {
+    margin: 0px;
+  }
+}
+
+.preview__hidden:checked ~ .preview__wrap > .menu {
+  @include tablet {
+    margin-left: -195px;
+    // display: none;
+    transition: 0.5s;
+  }
 }
 
 .preview__hidden:checked ~ .preview__wrap .slider__point-1 {
