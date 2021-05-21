@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <section class="preview">
+  <section class="preview" id="preview">
     <input type="checkbox" class="preview__hidden visually-hidden" id="menu">
 
     <div class="preview__wrap">
@@ -31,7 +31,7 @@
         <nav class="menu__nav">
           <ul class="menu__list">
             <li class="menu__item"><a href="#about" class="menu__link">about me</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">my works</a></li>
+            <li class="menu__item"><a href="#works" class="menu__link">my works</a></li>
             <li class="menu__item"><a href="#contacts" class="menu__link">contacts</a></li>
           </ul>
         </nav>
@@ -53,21 +53,22 @@
         <div class="slider-menu__social-wrap">
           <ul class="slider-menu__list">
             <li class="slider-menu__social">
-              <a href="" class="slider-menu__social-link">
+              <a href="https://github.com/zernitskaya" class="slider-menu__social-link">
                 <svg class="slider-menu__social-img" width="100" height="100">
-                  <use xlink:href="img/sprite/sprite.svg#fc"></use>
+                  <use xlink:href="img/sprite/sprite.svg#git"></use>
                 </svg>
               </a>
             </li>
+
             <li class="slider-menu__social">
-              <a href="" class="slider-menu__social-link">
+              <a href="https://www.instagram.com/zernitskayadasha/" class="slider-menu__social-link">
                 <svg class="slider-menu__social-img" width="100" height="100">
                   <use xlink:href="img/sprite/sprite.svg#inst"></use>
                 </svg>
               </a>
             </li>
             <li class="slider-menu__social">
-              <a href="" class="slider-menu__social-link">
+              <a href="https://t.me/zernitskaya" class="slider-menu__social-link">
                 <svg class="slider-menu__social-img" width="100" height="100">
                   <use xlink:href="img/sprite/sprite.svg#telegram"></use>
                 </svg>
@@ -197,6 +198,11 @@
   </section>
 
   <section class="about" id="about">
+
+    <a href="#preview" class="top">
+      <button class="top-btn">top</button>
+    </a>
+
     <div class="about__me">
       <h2 class="about__title">
         About me
@@ -321,7 +327,12 @@
     </div>
   </section>
 
-  <section class="works">
+  <section class="works" id="works">
+
+    <a href="#preview" class="top">
+      <button class="top-btn">top</button>
+    </a>
+
     <h2 class="works__title">
       my works
     </h2>
@@ -357,14 +368,14 @@
       <li class="works__item">
         <a href="#" class="works__link">
           <div class="works__wrap">
-            <img src="" alt="" class="works__img">
+            <!-- <img src="" alt="" class="works__img"> -->
           </div>
         </a>
       </li>
       <li class="works__item">
         <a href="#" class="works__link">
           <div class="works__wrap">
-            <img src="" alt="" class="works__img">
+            <img src="" alt="" class="works__img">in the process of writing
           </div>
         </a>
       </li>
@@ -373,6 +384,11 @@
 
 
   <section class="contacts" id="contacts">
+
+    <a href="#preview" class="top">
+      <button class="top-btn">top</button>
+    </a>
+
     <div class="contacts__wrap">
       <h2 class="contacts__title">
         contacts
