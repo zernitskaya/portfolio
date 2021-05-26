@@ -74,18 +74,16 @@
 }
 
 .menu__link {
+  display: inline-block;
   font-size: 20px;
   text-transform: uppercase;
+  transition: 0.4s;
 }
 
 .menu__link:hover {
-  font-size: 21px;
-  transition: 0.4s;
+  transform: scale(1.05);
   color: #ff0000;
 // box-shadow: none;
 // opacity: 0.3;
 }
 
-.menu__link:not(:hover) {
-  transition: 0.4s;
-}

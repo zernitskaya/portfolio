@@ -4,13 +4,21 @@
   position: relative;
   width: 100px;
   height: 100vh;
-  padding: 50px 10px 0 10px;
+  padding: 28px 10px 0 10px;
   // border-right: 1px solid #bdbdbd;
 
   @include tablet {
     width: 0;
     padding: 40px;
   }
+}
+
+.slider__logo {
+  object-fit: contain;
+  width: 80px;
+  height: 70px;
+  opacity: 0;
+  transition: 0.4s;
 }
 
 .slider-menu__list {
