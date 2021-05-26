@@ -67,6 +67,9 @@
 }
 
 .greeting__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 250px;
   height: 50px;
   text-transform: uppercase;
