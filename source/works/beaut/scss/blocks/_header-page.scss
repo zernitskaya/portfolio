@@ -1,0 +1,46 @@
+.header-page__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header-page__wrap-title {
+    width: 50%;
+    max-width: 580px;
+    margin-right: 29px;
+
+    @include exlg {
+        margin-right: 16px;
+    }
+}
+
+.header-page__text--small {
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 0.055em;
+    text-align: left;
+
+    @include exlg {
+        font-size: 20px;
+    }
+}
+
+// .header-page__btn-wrap {
+//     // display: flex;
+// }
+.header-page__btn {
+    width: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    margin-left: 129px;
+}
+
+.header-page__icon-wrap {
+    width: 40px;
+    height: 40px;
+}
+
+.header-page__link {
+    text-decoration: underline;
+    padding-left: 25px;
+}

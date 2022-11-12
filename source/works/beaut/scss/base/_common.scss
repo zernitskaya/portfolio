@@ -1,0 +1,54 @@
+body {
+    font-family: 'Futura';
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+body.fixed {
+    overflow: hidden;
+    padding-right: 14px;
+}
+
+.container {
+    max-width: 1530px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include max {
+        max-width: 1366px;
+    }
+
+    @include exlg {
+        //max-width: 1140px;
+    }
+
+    @include lg {
+        //max-width: 960px;
+    }
+
+    @include md {
+        //max-width: 720px;
+    }
+
+    @include sd {
+        max-width: 100%;
+    }
+}
+
+a:not(.button) {
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active {
+        opacity: .7;
+    }
+}
+
+
+button {
+    &:active {
+        opacity: .7;
+    }
+}

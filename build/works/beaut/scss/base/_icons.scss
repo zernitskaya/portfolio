@@ -1,0 +1,31 @@
+@mixin icon($name) {
+    background-image: url('../img/icons/#{$name}');
+}
+
+[class*="icon-i"] {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-i-heart { @include icon('heart.svg'); }
+.icon-i-arrow { @include icon('arrow.svg'); }
+.icon-i-circle { @include icon('circle.svg'); }
+.icon-i-profile { @include icon('profile.svg'); }
+.icon-i-clock { @include icon('clock.svg'); }
+.icon-i-rub { @include icon('rub.svg'); }
+.icon-i-star { @include icon('star.svg'); }
+.icon-i-nav { @include icon('nav.svg'); }
+.icon-i-search { @include icon('search.svg'); }
+.icon-i-helper { @include icon('helper.svg'); }
+.icon-i-download { @include icon('download.svg'); }
+.icon-i-map { @include icon('map.svg'); }
+.icon-i-small_arrow { @include icon('small_arrow.svg'); }
+.icon-i-profile2 { @include icon ('profile2.svg'); }
+.icon-i-plus { @include icon ('plus.svg'); }
+.icon-i-edit { @include icon ('edit.svg'); }
+.icon-i-plus-black { @include icon ('plus-black.svg'); }
+.icon-i-loading { @include icon ('loading.svg'); }

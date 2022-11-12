@@ -1,0 +1,86 @@
+.schedule {
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba(166, 230, 219, 0.4);
+
+    @include exlg {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+.schedule__wrap {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.055em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+
+    @include exlg {
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    @include md {
+        font-size: 18px; 
+        text-align: center;
+    }
+}
+
+.schedule__title {
+    margin-bottom: 50px;
+}
+
+.schedule__option-wrap {
+    margin-bottom: 79px;
+
+    @include exlg {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.schedule__option {
+    width: 268px;
+    height: 50px;
+    background: #FFFFFF;
+    margin-bottom: 37px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.schedule__bottom-wrap {
+    // position: relative;
+    margin-top: 150px;
+
+    @include exlg {
+       margin-top: 50px; 
+    }
+}
+
+.schedule__weekend {
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: 0.055em;
+    margin-bottom: 30px;
+
+    @include md {
+        font-size: 44px; 
+    }
+
+
+    @include sd {
+        font-size: 24px; 
+    }
+}
+
+.schedule__button {
+    @include exlg {
+        width: 268px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}

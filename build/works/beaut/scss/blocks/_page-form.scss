@@ -1,0 +1,44 @@
+.page-form {
+    margin-top: 294px;
+    margin-bottom: 200px;
+
+    @include max {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    @include exlg {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+}
+
+.page-form .heading {
+    margin-bottom: 111px;
+
+    @include exlg {
+        margin-bottom: 64px;
+    }
+
+    @include lg {
+        font-size: 28px;
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+.page-form__form {
+    width: 292px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.page-form__helper {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 200px;
+
+    @include md {
+        padding-top: 64px;
+    }
+}

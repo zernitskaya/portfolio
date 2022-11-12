@@ -1,0 +1,74 @@
+.done {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 24px 0;
+    background-color: rgba(196, 196, 196, 0.4);
+    overflow: auto;
+}
+
+.done.active {
+    display: block;
+}
+
+.done__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.done__wrap {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 708px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 67px;
+    padding-right: 67px;
+    padding-bottom: 50px;
+
+    @include md {
+        width: 100%;
+    }
+}
+
+.done__heading {
+    width: 400px;
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: 0.055em;
+    padding-top: 78px;
+    margin-bottom: 70px;
+    margin-left: 260px;
+
+    @include lg {
+        font-size: 36px;
+    }
+    
+    @include md {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.done__text {
+    width: 131px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.055em;
+    // margin: 30px 124px 30px 122px;
+    margin: 30px 122px;
+}

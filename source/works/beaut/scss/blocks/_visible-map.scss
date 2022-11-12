@@ -1,0 +1,23 @@
+
+.visible-map {
+    display: flex;
+    align-items: center;
+}
+
+.visible-map__wrap {
+    width: 84px;
+    height: 83px;
+
+    @include sd {
+        padding-left: 20px;
+    }
+
+}
+
+.visible-map__text {
+    padding-left: 15px;
+
+    @include sd {
+        font-size: 24px; 
+    }
+}

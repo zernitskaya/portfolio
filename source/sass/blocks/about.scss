@@ -1,6 +1,9 @@
 .about {
+  position: relative;
   font-family: $basic-font;
   padding-bottom: 30px;
+  margin-top: -50px;
+  background-color: #e7e7e9;
 }
 
 .about__title {
@@ -22,7 +25,7 @@
   border-radius: 10px;
   position: relative;
   margin-top: 70px;
-
+  background-color: #fff;
 
   @include middle-tablet {
     width: 80%;
@@ -33,7 +36,7 @@
 .about__skills::before,
 .about__me::after,
 .about__skills::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 20px;
   bottom: -20px;
@@ -60,7 +63,7 @@
 .about__lang::before,
 .about__study::after,
 .about__lang::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 20px;
   bottom: -20px;
@@ -86,4 +89,3 @@
 .about__text {
   padding-top: 15px;
 }
-

@@ -1,0 +1,93 @@
+.program {
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 240px;
+
+    @include max {
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+}
+
+.program__item {
+    display: flex;
+    word-break: break-word;
+
+    @include md {
+        display: block;
+    }
+}
+
+.program__icon {
+    flex-shrink: 0;
+    margin-top: 29px;
+    margin-left: 67px;
+    width: 311px;
+    height: 240px;
+
+    @include exlg {
+        margin-left: 0;
+    }
+
+    @include md {
+        width: 100px;
+        height: 100px;
+        margin-top: 0;
+    }
+
+    @include sd {
+        margin: 0 auto;
+    }
+}
+
+.program__heading {
+    text-align: left;
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 0.055em;
+    padding-left: 77px;
+    padding-top: 64px;
+
+    @include exlg {
+        padding-left: 0;
+    }
+
+    @include md {
+        padding: 0;
+    }
+}
+
+.program__star {
+    position: relative;
+    font-weight: 300;
+    font-size: 50px;
+    padding-bottom: 25px;
+    margin-bottom: 71px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 200vw;
+        height: 1px;
+        border: 1px solid #484848;
+    }
+
+    @include exlg {
+        font-size: 36px;
+    }
+
+    @include sd {
+        padding-top: 8px;
+        margin-bottom: 24px;
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+.program__text {
+    @include exlg {
+        font-size: 24px;
+    }
+}
