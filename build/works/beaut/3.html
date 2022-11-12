@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header-page">
+        <div class="container">
+            <div class="header-page__wrap">
+                <div class="header-page__wrap-title">
+                    <div class="logo">
+                        <div class="logo__picrures">
+                            <img src="img/pictures/logowight.svg" alt="" class="logo__img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-page__heading">
+                    <h1 class="header-page__text--small">
+                        профиль
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="profile">
+        <div class="container">
+            <div class="profile__type">
+                <div class="profile__type-item  active">Мастер</div>
+                <div class="profile__type-item">Клиент</div>
+            </div>
+
+            <div class="profile__desc">
+                <div class="profile__photo">
+                    <div class="profile__photo-wrap">
+                        <img src="img/pictures/mainphoto.png" alt="" class="profile__img">
+                    </div>
+
+                    <div class="profile__photo-download">
+                        <div class="download">
+                            <input type="file" class="download__input">
+
+                            <div class="icon-i-download"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile__info">
+                    <div class="profile__title">
+                        <h2 class="heading  heading--clear">
+                            НАТАЛИЯ ДЕ РОССИ
+                        </h2>
+                    </div>
+
+                    <form class="profile__form">
+                        <div class="profile__form-select">
+                            <button class="caption" type="button">
+                                специальность
+                                <small class="caption__prompt-text">Косметолог-эстетист</small>
+                                <span class="caption__arrow"><span class="icon-i-arrow"></span></span>
+                            </button>
+                        </div>
+
+                        <div class="profile__form-inputs">
+                            <div class="profile__form-input">
+                                <div class="caption profile__caption">Телефон *</div>
+                                <input type="text" class="item-input" placeholder="+ 7">
+                            </div>
+
+                            <div class="profile__form-input">
+                                <div class="caption profile__caption">E-mail</div>
+                                <input type="text" class="item-input" placeholder="E-mail">
+                            </div>
+
+                            <div class="profile__form-input">
+                                <button type="button" class="profile__map">
+                                    <div class="profile__map-icon">
+                                        <span class="icon-i-nav"></span>
+                                    </div>
+
+                                    <div class="caption profile__aption">
+                                        Адрес приема
+                                    </div>
+                                </button>
+                            </div>
+
+                            <div class="profile__form-input">
+                                <div class="caption profile__caption">метро</div>
+                                <input type="text" class="item-input" placeholder="парк победы">
+                            </div>
+                        </div>
+
+                        <div class="profile__form-pass">
+                            <h3 class="profile__pass-title">
+                                АККАУНТ
+                            </h3>
+
+                            <div class="profile__pass-inputs">
+                                <div class="profile__pass-input">
+                                    <input type="text" class="item-input" placeholder="Обновите пароль">
+                                </div>
+
+                                <div class="profile__pass-input">
+                                    <input type="text" class="item-input" placeholder="Повторите пароль">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile__btn">
+                            <button class="button button--black">
+                                сохранить
+                            </button>
+                        </div>
+                        <div class="profile__btn">
+                            <button class="button button--black button--pic">
+                                настроить карту клиента
+                                <!-- <div class="profile__icon-wrap"> -->
+                                <div class="icon-i-profile2"></div>
+                                <!-- </div> -->
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="program-profile">
+        <div class="container  program-profile__cont">
+            <div class="program-profile__star">
+                <div class="program-profile__star-img">
+                    <div class="icon-i-star"></div>
+                </div>
+
+                <a href="#" class="fprogram-profile__star-link">
+                    <span class="program-profile__star-span">РЕФЕРАЛЬНАЯ <br> ПРОГРАММА</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="acordion js-acordion-wrap">
+        <div class="container">
+            <div class="acordion__item js-accordion-item">
+                <div class="acordion__title">
+                    <div class="acordion__text  heading  heading--clear">ГРАФИК РАБОТЫ</div>
+                    <div class="acordion__icon">
+                        <div class="icon-i-arrow"></div>
+                    </div>
+                </div>
+
+                <div class="acordion__desc">
+
+                    <div class="schedule">
+
+                        <div class="schedule__wrap">
+                            <p class="schedule__title">начало и конец рабочего дня</p>
+                            <input type="time" class="schedule__option"></input>
+                            <input type="time" class="schedule__option"></input>
+
+                            <div class="schedule__bottom-wrap">
+                                <p class="schedule__title">длительность процедуры</p>
+
+                                <div class="schedule__option-wrap">
+
+                                    <div class="select-time">
+                                        <select class="select-time__option">
+                                            <option value="10:00">10:00</option>
+                                            <option value="10:00">10:00</option>
+                                            <option value="10:00">10:00</option>
+                                        </select>
+                                        <div class="select-time__icon">
+                                            <div class="icon-i-small_arrow"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="visible-map">
+                                    <div class="visible-map__wrap">
+                                        <span class="icon-i-map"></span>
+                                    </div>
+                                    <p class="visible-map__text">
+                                        видимость на картах <br> ВКЛЮЧЕНА
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="schedule__wrap">
+                            <p class="schedule__title">перерыв на ланч</p>
+
+                            <input type="time" class="schedule__option"></input>
+                            <input type="time" class="schedule__option"></input>
+
+                            <div class="schedule__bottom-wrap">
+                                <p class="schedule__title">перерыв между процедурами</p>
+
+                                <div class="schedule__option-wrap">
+
+                                    <div class="select-time">
+                                        <select class="select-time__option">
+                                            <option value="10:00">10:00</option>
+                                            <option value="10:00">10:00</option>
+                                            <option value="10:00">10:00</option>
+                                        </select>
+                                        <div class="select-time__icon">
+                                            <div class="icon-i-small_arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h2 class="schedule__weekend">выходные дни</h2>
+                                <p class="schedule__title">3/09/20; 18/09/20</p>
+                                <button class="button--black button schedule__button">сохранить</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="acordion__item js-accordion-item">
+                <div class="acordion__title">
+                    <div class="acordion__text  heading  heading--clear">ОБЩИЕ ТРАТЫ</div>
+                    <div class="acordion__icon">
+                        <div class="icon-i-arrow"></div>
+                    </div>
+                </div>
+
+                <div class="acordion__desc">
+                    <p class="acordion__hiden-text">
+                        Сохранте свои базовые затраты, чтобы учитывть их в <span class="acordion__hiden-text-bold">общей
+                            статистике</span> доходов и расходов
+                    </p>
+
+                    <div class="acordion__scroll">
+                        <div class="spending">
+                            <div class="spending__wrap spending__wrap-heading">
+                                <div class="spending__data spending__head">ДАТА</div>
+                                <div class="spending__name spending__head">НАЗВАНИЕ</div>
+                                <div class="spending__type spending__head">ТИП</div>
+                                <div class="spending__price spending__head">ЦЕНА</div>
+                            </div>
+
+                            <div class="spending__wrap spending__wrap--table spending__wrap--color">
+                                <div class="spending__data spending__head">16/09</div>
+                                <div class="spending__name"></div>
+                                <div class="spending__type">разовая
+                                    <div class="spending__wrap-arrow">
+                                        <div class="icon-i-small_arrow"></div>
+                                    </div>
+                                </div>
+                                <div class="spending__price"></div>
+
+                                <div class="spending__wrap-delete">
+                                    <div class="spending__wrap-edit">
+                                        <div class="icon-i-edit"></div>
+
+                                    </div>
+                                    <div class="spending__wrap-plus-black">
+                                        <div class="icon-i-plus-black"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spending__wrap spending__wrap--table">
+                                <div class="spending__data spending__head">17/09</div>
+                                <div class="spending__name"></div>
+                                <div class="spending__type">ежемесячная</div>
+                                <div class="spending__price"></div>
+
+                                <div class="spending__wrap-delete">
+                                    <div class="spending__wrap-edit">
+                                        <div class="icon-i-edit"></div>
+
+                                    </div>
+                                    <div class="spending__wrap-plus-black">
+                                        <div class="icon-i-plus-black"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spending__wrap spending__wrap--table spending__wrap--color">
+                                <div class="spending__data spending__head">18/09</div>
+                                <div class="spending__name"></div>
+                                <div class="spending__type"></div>
+                                <div class="spending__price"></div>
+
+                                <div class="spending__wrap-delete">
+                                    <div class="spending__wrap-edit">
+                                        <div class="icon-i-edit"></div>
+
+                                    </div>
+                                    <div class="spending__wrap-plus-black">
+                                        <div class="icon-i-plus-black"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spending__wrap spending__wrap--table">
+                                <div class="spending__data spending__head">19/09</div>
+                                <div class="spending__name"></div>
+                                <div class="spending__type"></div>
+                                <div class="spending__price"></div>
+
+                                <div class="spending__wrap-delete">
+                                    <div class="spending__wrap-edit">
+                                        <div class="icon-i-edit"></div>
+
+                                    </div>
+                                    <div class="spending__wrap-plus-black">
+                                        <div class="icon-i-plus-black"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="spending__btn">
+                        <div class="spending__add">
+                            <button class="spending__button-add">
+                                <div class="spending__add--btn">
+                                    <div class="icon-i-plus"></div>
+                                </div>
+                                добавить
+                            </button>
+                        </div>
+
+                        <button
+                            class="button--black button--small button map__btn spending__btn-save">сохранить</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="acordion__item  active  js-accordion-item">
+                <div class="acordion__title">
+                    <div class="acordion__text  heading  heading--clear">МОИ РАБОТЫ</div>
+                    <div class="acordion__icon">
+                        <div class="icon-i-arrow"></div>
+                    </div>
+                </div>
+
+                <div class="acordion__desc">
+
+                    <div class="conteiner">
+
+                    <div class="acordion__download">
+                        <div class="download">
+                            <div class="icon-i-download"></div>
+                        </div>
+                        <p class="acordion__text-download"> загрузить</p>
+                    </div>
+
+                    <div class="loading">
+                        <div class="loading__wrap">
+                            <div class="loading__wrap-icon">
+                                <div class="icon-i-loading"></div>
+                            </div>
+
+                            <div class="loading__form-input">
+                                <div class="loading__caption profile__caption">загрузите фото с устройства
+                                    или добавьте ссылку
+                                </div>
+                                <input type="text" class="item-inpu loading__input">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                    <div class="gallery">
+                        <div class="gallery__item">
+                            <div class="gallery__img-wrap">
+                                <img src="https://cdnimg.rg.ru/img/content/168/10/26/kotik_d_850_d_850.jpg" alt=""
+                                    class="gallery__img">
+                            </div>
+                        </div>
+
+                        <div class="gallery__item">
+                            <div class="gallery__img-wrap">
+                                <img src="https://nashagazeta.ch/sites/default/files/cat-2886062_1280.jpg" alt=""
+                                    class="gallery__img">
+                            </div>
+                        </div>
+
+                        <div class="gallery__item">
+                            <div class="gallery__img-wrap">
+                                <img src="https://lh3.googleusercontent.com/proxy/VZ-vShTM0w0KRvhhkLVFLxgL-Te_sKMcY79ZkGUYT7_xzMe-muCsRRqL21mZQcuhcG_R-qeTwB4Iw1l6rPHfG_dEtKnSvfbWpvXf0TI"
+                                    alt="" class="gallery__img">
+                            </div>
+                        </div>
+
+                        <div class="gallery__item">
+                            <div class="gallery__img-wrap">
+                                <img src="img/pictures/mainphoto.png" alt="" class="gallery__img">
+                            </div>
+                        </div>
+
+                        <div class="gallery__item">
+                            <div class="gallery__img-wrap">
+                                <img src="https://www.dw.com/image/38585163_303.jpg" alt="" class="gallery__img">
+                            </div>
+                        </div>
+
+                        <div class="gallery__item">
+                            <div class="gallery__img-wrap">
+                                <img src="https://cdn24.img.ria.ru/images/151546/28/1515462835_0:0:1036:587_600x0_80_0_0_a75f922e8b052d966122e1c9dc40feb4.jpg"
+                                    alt="" class="gallery__img">
+                            </div>
+                        </div>
+
+                        <div class="gallery__item">
+                            <div class="gallery__img-wrap">
+                                <img src="https://catmolly.com/wp-content/uploads/2019/01/klichki-dlya-kotov.jpg" alt=""
+                                    class="gallery__img">
+                            </div>
+                        </div>
+
+                        <div class="gallery__item">
+                            <div class="gallery__img-wrap">
+                                <img src="https://kotiki.net/wp-content/uploads/2020/02/%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-%D0%9A%D0%BE%D1%82%D0%BE%D0%B2-%D0%B8-%D0%9A%D0%BE%D1%88%D0%B5%D0%BA-%D0%BF%D0%BE-%D1%83%D1%85%D0%BE%D0%B4%D1%83-%D0%B7%D0%B0-%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%BE%D0%BC0-502x330.jpg"
+                                    alt="" class="gallery__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lightbox js-lightbox">
+        <div class="lightbox__overlay js-lightbox-close"></div>
+
+        <div class="container  lightbox__container">
+            <div class="lightbox__close js-lightbox-close-btn">
+                <button class="close close--light" type="button"></button>
+            </div>
+
+            <div class="lightbox__wrap">
+                <button class="lightbox__button lightbox__button--left js-left"></button>
+
+                <div class="lightbox__img-wrap">
+                    <img src="" alt="" class="lightbox__img  js-lightbox__img">
+                </div>
+
+                <button class="lightbox__button lightbox__button--right js-right"></button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__about">
+                    <a href="" class="footer__link-logo">
+                        <img src="img/pictures/logo.svg" alt="" class="footer__logo">
+                    </a>
+
+                    <p class="footer__about-text">ЭТО ЛИЧНЫЙ АССИСТЕНТ БЬЮТИ-МАСТЕРА
+                        СЕРВИС ДЛЯ ЗАПИСИ НА
+                        БЬЮТИ-ПРОЦЕДУРЫ
+                        ОНЛАЙН
+                    </p>
+                </div>
+
+                <div class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__list"><a href="" class="footer__link">о нас</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__list"><a href="" class="footer__link">как завовевать сердечки
+                                клиентов?</a></li>
+                        <li class="footer__list"><a href="" class="footer__link">как найти мастера мечты?</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__star">
+                    <div class="footer__star-img">
+                        <div class="icon-i-star"></div>
+                    </div>
+
+                    <a href="#" class="footer__star-link">
+                        <span class="footer__star-span">РЕФЕРАЛЬНАЯ <br> ПРОГРАММА</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

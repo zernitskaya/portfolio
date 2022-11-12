@@ -1,0 +1,61 @@
+.header {
+    overflow: hidden;
+}
+
+.header__container {
+    padding-right: 52px;
+
+    @include max {
+        padding-right: 15px;
+    }
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__wrap-logo {
+    margin-left: 19px;
+
+    @include exlg {
+        margin: 0;
+    }
+}
+
+.header__link-logo {
+    width: 169px;
+    height: 130px;
+    display: block;
+
+    @include exlg {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.header__img-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header__container {
+    position: relative;
+}
+
+.header__vector {
+    position: absolute;
+    width: 200vw;
+    height: 1px;
+    left: 50px;
+    bottom: 10px;
+    border: 1px solid #484848;
+
+    @include exlg {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+}

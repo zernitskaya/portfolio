@@ -1,0 +1,20 @@
+.input-button {
+    position: relative;
+    height: 44px;
+    border-bottom: 1px solid #000;
+    width: 250px;
+    padding-left: 37px;
+    font-size: 20px;
+}
+
+.input-button:hover .input-button__ico {
+    transform: scale(1.2);
+}
+
+.input-button__ico {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+}

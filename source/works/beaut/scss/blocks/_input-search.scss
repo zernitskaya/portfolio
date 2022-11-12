@@ -1,0 +1,23 @@
+.input-search {
+    position: relative;
+    display: block;
+    height: 60px;
+}
+
+.input-search__ico {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    bottom: 0;
+    margin: auto;
+}
+
+.input-search__item {
+    padding-left: 40px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid $brand2-color;
+    font-size: 20px;
+}

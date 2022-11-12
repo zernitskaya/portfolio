@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header-page">
+        <div class="container">
+            <div class="header-page__wrap">
+                <div class="header-page__wrap-title">
+                    <div class="logo">
+                        <div class="logo__picrures">
+                            <img src="img/pictures/logowight.svg" alt="" class="logo__img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-page__heading">
+                    <h1 class="header-page__text--small">регистрация
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-form">
+        <div class="container">
+            <h2 class="heading">
+                ЗАРЕГИСТРИРУЙТЕ СВОИ НОГОТОЧКИ
+            </h2>
+
+            <form class="page-form__form form">
+                <fieldset class="form__step">
+                    <legend class="form__form-title">1. Информация о мастере *</legend>
+
+                    <div class="form__input">
+                        <input type="text" class="item-input" placeholder="ФИО (видят только клиенты)">
+                    </div>
+
+                    <div class="form__input">
+                        <button class="caption  form__caption" type="button" data-modal-open="skills">
+                            Услуга *
+                            <small class="caption__prompt-text"> (выберите из списка)</small>
+                            <span class="caption__arrow"><span class="icon-i-arrow"></span></span>
+                        </button>
+                    </div>
+
+                    <div class="form__input">
+                        <div class="caption form__caption">Телефон *</div>
+                        <input type="text" class="item-input" placeholder="+ 7">
+                    </div>
+
+                    <div class="form__input">
+                        <div class="caption form__caption">E-mail</div>
+                        <input type="text" class="item-input" placeholder="E-mail">
+                    </div>
+
+                    <div class="form__input">
+                        <div class="caption form__caption">
+                            Адрес приема
+                            <small class="caption__prompt-text">(видят только клиенты)</small>
+                        </div>
+
+                        <button class="input-button" type="button" data-modal-open="map">
+                            <span class="input-button__ico">
+                                <span class="icon-i-nav"></span>
+                            </span>
+
+                            <span class="input-button__text"></span>
+                        </button>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form__step">
+                    <legend class="form__form-title">2. Верификация</legend>
+
+                    <div class="form__input">
+                        <input type="text" class="item-input" placeholder="Придумайте пароль">
+                    </div>
+
+                    <div class="form__input">
+                        <input type="text" class="item-input" placeholder="Повторите пароль">
+                    </div>
+                </fieldset>
+
+                <div class="form__btn">
+                    <button class="button--black button">стать мастером</button>
+                </div>
+            </form>
+
+            <div class="page-form__helper">
+                <button class="helper" type="button" data-modal-open="query">
+                    <span class="helper__icon">
+                        <span class="icon-i-helper"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="hiden-choice" data-modal-name="skills">
+        <div class="hiden-choice__overlay" data-modal-close="skills"></div>
+
+        <div class="container">
+            <div class="hiden-choice__heading-wrap">
+                <div class="hiden-choice__close">
+                    <button class="close" type="button" data-modal-close="skills"></button>
+                </div>
+
+                <h2 class="hiden-choice__heading">
+                    ВЫБЕРИТЕ ИЗ СПИСКА
+                    (начните вводить или выберите из списка)
+                </h2>
+
+                <div class="hiden-choice__input-search">
+                    <label class="input-search">
+                        <input type="text" class="input-search__item" placeholder="поиск">
+
+                        <span class="input-search__ico">
+                            <span class="icon-i-search"></span>
+                        </span>
+                    </label>
+                </div>
+
+                <form class="hiden-choice__text-wrap">
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> косметолог - эстетист</span>
+                    </label>
+
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> врач - косметолог</span>
+                    </label>
+
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> массажист</span>
+                    </label>
+
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> визажист</span>
+                    </label>
+
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> бровист</span>
+                    </label>
+
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> грумер</span>
+                    </label>
+
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> мастер мехенди</span>
+                    </label>
+
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> матер педикюра</span>
+                    </label>
+
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> специалист по духовным практикам</span>
+                    </label>
+
+                    <label class="hiden-choice__label">
+                        <input name="radio" type="radio" class="hiden-choice__radio">
+                        <span class="hiden-choice__ico"></span>
+                        <span class="hiden-choice__text"> йога</span>
+                    </label>
+                    <button class="button--black button--small button hiden-choice__btn">ок</button>
+                </form>
+
+                <div class="hiden-choice__wrap-button">
+                    <button class="hiden-choice__button" data-modal-open="added">
+                        <span class="hiden-choice__circle">
+                            <span class="icon-i-circle"></span>
+                        </span>
+                        добавить свою специальность
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="added" data-modal-name="added">
+        <div class="added__overlay" data-modal-close="added"></div>
+        <div class="container">
+            <div class="added__heading-wrap">
+                <div class="added__close">
+                    <button class="close" type="button" data-modal-close="added"></button>
+                </div>
+
+                <h2 class="added__heading">
+                    добавление новой специальноти
+                </h2>
+
+                <form class="added__form">
+                    <div class="added__input-wrap">
+                        <input type="text" class="item-input added__input" placeholder="введите название">
+                    </div>
+
+                    <div class="added__input-wrap">
+                        <input type="text" class="item-input added__input" placeholder="краткое описание услуги">
+                    </div>
+                </form>
+
+                <div class="added__text-wrap">
+                    <p class="added__text">Внимание! Администрация Жужи сохраняет за собой право отказать в
+                        добавлении услуг без объяснения причины.
+                    </p>
+
+                    <button class="button--black button--small button hiden-choice__btn">ок</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map" data-modal-name="map">
+        <div class="map__overlay" data-modal-close="map"></div>
+
+        <div class="container">
+            <div class="map__wrap">
+                <div class="map__close">
+                    <button class="close" type="button" data-modal-close="map"></button>
+                </div>
+
+                <div class="map__input-wrap">
+                    <input type="text" class="item-input map__input" placeholder="начните вводить...">
+                </div>
+
+                <div class="map__nav-wrap">
+                    <img src="img/pictures/map.png" alt="" class="map__img">
+                </div>
+                <button class="button--black button--small button map__btn">ок</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="query" data-modal-name="query">
+        <div class="query__overlay" data-modal-close="query"></div>
+        <div class="container">
+            <div class="query__wrap">
+                <div class="query__close">
+                    <button class="close" type="button" data-modal-close="query"></button>
+                </div>
+
+                <div class="query__desc">
+                    <h2 class="query__heading">
+                        Задайте вопрос. Менеджер свяжется с вами очень быстро
+                    </h2>
+
+                    <div class="query__form">
+                        <p class="query__form-title">ваш вопрос</p>
+                        <textarea class="query__form-area" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div action="" class="query__form">
+                        <p class="query__form-title">почта</p>
+                        <textarea class="query__form-area query__form-mail" cols="30"
+                                  rows="10"></textarea>
+                    </div>
+
+                    <label class="query__label">
+                        <input type="checkbox" class="query__radio">
+                        <span class="query__ico"></span>
+                        <span class="query__text">Я ознакомлен с
+                            <b class="hiden-choice__text-color">политикой конфиденциальности</b>
+                         </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

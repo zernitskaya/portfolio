@@ -1,0 +1,155 @@
+.profile {
+    padding-top: 50px;
+}
+
+.profile__type {
+    width: 160px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    font-size: 40px;
+    letter-spacing: 0.055em;
+    text-transform: lowercase;
+}
+
+.profile__type-item {
+    padding: 5px 0;
+}
+
+.profile__type-item.active {
+    font-weight: 600;
+    color: $brand-color;
+    border-right: 5px solid #000;
+}
+
+.profile__desc {
+    display: flex;
+    
+    @include md {
+        display: block;
+    }
+}
+
+.profile__photo {
+    width: 45%;
+    max-width: 501px;
+    flex-shrink: 0;
+
+    @include exlg {
+        width: 30%;
+    }
+
+    @include md {
+        margin: 0 auto;
+        margin-bottom: 24px;
+        width: 60%;
+    }
+
+    @include sd {
+        margin-bottom: 24px;
+    }
+}
+
+.profile__photo-wrap {
+    position: relative;
+    padding-bottom: 136%;
+
+    @include md {
+        padding-bottom: 100%;
+    }
+}
+
+.profile__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile__photo-download {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+.profile__info {
+    padding-left: 100px;
+
+    @include exlg {
+        padding-left: 36px;
+    }
+
+    @include md {
+        padding-left: 0;
+    }
+}
+
+.profile__title {
+    margin-bottom: 38px;
+}
+
+.profile__form-select {
+    margin-bottom: 50px;
+}
+
+.profile__form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -8px;
+    margin-left: -8px;
+    
+    @include lg {
+        display: block;
+    }
+}
+
+.profile__form-input {
+    width: 50%;
+    padding: 0 8px;
+    margin-bottom: 88px;
+}
+
+.profile__map {
+    display: flex;
+    align-items: center;
+}
+
+.profile__map-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.profile__caption {
+    margin-bottom: 20px;
+}
+
+.profile__form-input .item-input {
+    margin-left: 20px;
+}
+
+.profile__pass-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.profile__pass-inputs {
+    padding-left: 30px;
+}
+
+.profile__pass-input:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.profile__btn {
+    padding-left: 30px;
+    padding-top: 90px;
+
+    @include md {
+        padding-left: 0;
+        padding-top: 24px;
+    }
+}

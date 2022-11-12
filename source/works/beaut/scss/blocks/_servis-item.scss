@@ -1,0 +1,105 @@
+.servis-item {
+  word-break: break-word;
+
+  &:not(:last-child) {
+    margin-bottom: 331px;
+
+    @include max {
+      margin-bottom: 64px;
+    }
+  }
+
+  @include md {
+    margin-bottom: 64px;
+  }
+}
+
+.servis-item__icon {
+  flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  margin-right: 34px;
+
+  @include exlg {
+    width: 120px;
+    height: 120px;
+    margin-right: 24px;
+  }
+
+  @include sd {
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+}
+
+.servis-item__heading {
+  padding-left: 220px;
+  margin-right: 34px;
+  text-align: left;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0.055em;
+
+  @include exlg {
+    margin-top: 34px;
+    padding-left: 140px;
+    font-size: 24px;
+  }
+
+  @include lg {
+    margin-top: 24px;
+    padding-left: 0;
+    font-size: 20px;
+  }
+
+  @include md {
+    margin-right: 0;
+  }
+}
+
+.servis-item__wrap-title {
+  display: flex;
+  align-items: center;
+
+  @include sd {
+    display: block;
+  }
+}
+
+.servis-item__wrap-title--des {
+  margin-bottom: 64px;
+
+  @include lg {
+    margin-bottom: 24px;
+  }
+}
+
+.servis-item__card {
+  max-width: 300px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0.055em;
+
+  @include exlg {
+    font-size: 20px;
+  }
+
+  @include lg {
+    font-size: 18px;
+  }
+
+  @include sd {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.servis-item__text {
+  margin-bottom: 69px;
+
+  @include lg {
+    margin-bottom: 24px;
+  }
+}
